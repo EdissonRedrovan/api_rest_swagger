@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>API RESTful - Usuario</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <h1>API RESTful</h1>
+        <h2>Usuario</h2>
+        <div id="usuario">
+            <label>Nombre:</label>
+            <input type="text" id="nombre" value=""/>
+            <label>Apellido:</label>
+            <input type="text" id="apellido" value=""/>
+            <button onclick="guardar_usuario()">Guardar</button>
+            <button onclick="cancelar_usuario()">Cancelar</button>
+        </div>
+
+        <h2>Actualizar Usuario</h2>
+            <div id="actualizar_usuario">
+                <label>ID:</label>
+                <input type="text" id="id" value=""/>
+                <label>Nombre:</label>
+                <input type="text" id="nombre_actualizar" value=""/>
+                <label>Apellido:</label>
+                <input type="text" id="apellido_actualizar" value=""/>
+                <button onclick="actualizar_usuario()">Actualizar</button>
+            </div>
+
+    
+            <h2>Eliminar Usuario</h2>
+            <div id="eliminar_usuario">
+                <label>ID:</label>
+                <input type="text" id="id_eliminar" value=""/>
+                <button onclick="eliminar_usuario()">Eliminar</button>
+            </div>
+
+            <h2>Lista de Usuarios</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Fecha de Registro</th>
+                        <th>Fecha de Actualización</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-usuarios">
+                    <!-- Aquí se insertarán las filas de usuarios dinámicamente -->
+                </tbody>
+            </table>
+
+    </body>
+</html>
